@@ -30,9 +30,12 @@ h3{
 
 </style>
 
- ul{
+ .show-desktop hide-mobile{
    list-style-type: none;
+   display: inline;
+   background-color: white;
    }
+
 
 
  .container{
@@ -40,17 +43,19 @@ h3{
    padding: 0.8em , 1.2em;
  }
 
+
+
   header{
     display: flex;
     justify-content: space-between;
   }
 
-  .hide-mobile{
-    display: none;
-  }
+    .hide-mobile{
+      display: none;
+    }
 
    .menu{
-     width: 70px;
+     width: 60px;
      margin-top: 45%;
    }
 
@@ -101,7 +106,7 @@ h3{
      top: 0;
      right: 0;
      text-align: left;
-     background: rgb(36,41,44);
+     background: #FFFAFA;
      height: 40%;
      z-index: 7;
      padding-top: 3em;
@@ -113,5 +118,57 @@ h3{
      padding: 1em, 2em;
      display: block;
      width: 40%;
-     background: rgb(45,51,54)
+     background: #FFFAFA;
+   }
+
+   .exit-btn{
+     margin-bottom: 1em;
+     margin-top: -1.3em;
+     text-align: right;
+     padding: 0 1.4em;
+   }
+
+   .exit-btn img{
+     width: 15px;
+     cursor: pointer;
+   }
+
+   @media only screen and (min-width:1024px) {
+    .container{
+      width: 80%;
+      margin:auto;
+    }
+
+    .show-desktop{
+      display: block;
+      margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop{
+      display: block;
+    }
+
+    nav ul{
+      position: inherit;
+      width: auto;
+      background: none;
+      display: flex;
+      padding-top: 20%;
+      text-emphasis-color: #FFFAFA;
+    }
+
+    nav ul li{
+      float: left;
+    }
+
+    nav ul li a{
+      color: black;
+      background-color: inherit;
+      text-align: right;
+      padding: 1em, 2em;
+    }
+
+    nav ul li a:hover{
+      background-color: inherit;
+    }
    }
