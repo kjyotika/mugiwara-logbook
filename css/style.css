@@ -1,0 +1,117 @@
+ *{
+   margin: 0;
+   padding: 0;
+   font-family: 'Lexend Exa', sans-serif;
+   font-family: 'Lexend Giga', sans-serif;
+ }
+
+ <style>
+body {
+  background-image: url('img/back.png');
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  color: white;
+  font-family: 'Homemade Apple', cursive;
+}
+
+h4{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+}
+
+h3{
+  color:#FFFAFA;
+  font-family: 'Rye', cursive;
+}
+
+</style>
+
+ ul{
+   list-style-type: none;
+   }
+
+
+ .container{
+   text-align: center;
+   padding: 0.8em , 1.2em;
+ }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hide-mobile{
+    display: none;
+  }
+
+   .menu{
+     width: 70px;
+     margin-top: 45%;
+   }
+
+    #Layer_1{
+      width: 90%;
+      margin: 0em 0em 0em 0em;
+      height: 950px;
+    }
+
+    .footer-container{
+      width: 100%;
+      background-color: black;
+      padding: 3em, 3em;
+      border-top-right-radius: 40px;
+    }
+
+    .footer-container::before{
+     content: "";
+     width: 40px;
+     height: 40px;
+     background-color: black;
+     position:absolute;
+     top: -80px;
+     left: 0;
+     z-index: -2;
+    }
+
+    .footer-container::after{
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: -80px;
+      left: 0;
+      z-index: -1;
+      }
+
+      .footer-container .container a p{
+        color: white;
+        font-size:1em;
+      }
+
+   nav ul{
+     position: fixed;
+     width: 30%;
+     top: 0;
+     right: 0;
+     text-align: left;
+     background: rgb(36,41,44);
+     height: 40%;
+     z-index: 7;
+     padding-top: 3em;
+   }
+
+   nav ul li a{
+     color: white;
+     text-decoration: none;
+     padding: 1em, 2em;
+     display: block;
+     width: 40%;
+     background: rgb(45,51,54)
+   }
